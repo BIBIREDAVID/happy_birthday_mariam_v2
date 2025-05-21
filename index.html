@@ -18,7 +18,7 @@
       <p>Wishing you a day filled with love, joy, and laughter!</p>
     </header>
 
-      <section class="countdown">
+    <section class="countdown">
       <h2>Countdown to the Big Day</h2>
       <div id="timer">
         <span id="days">00</span>D :
@@ -36,11 +36,11 @@
       </div>
     </section>
 
-    <section class="cake-section">
+    <!-- <section class="cake-section">
       <h2>Blow out the candles! 🕯️</h2>
       <canvas id="cakeCanvas" width="300" height="300"></canvas>
       <p id="blow-msg">Blow into your mic to extinguish the candles!</p>
-    </section>
+    </section> -->
 
     <section class="message-section" style="display:none;">
       <h2>Write a Special Message 💌</h2>
@@ -48,9 +48,29 @@
       <button onclick="submitMessage()">Send Message</button>
       <div id="messageDisplay"></div>
     </section>
+
+    <section class="custom-player-section">
+      <h2>🎶 Birthday Vibes Playlist 🎶</h2>
+      <p id="custom-track-title">Now Playing: Anita</p>
+      <div class="controls">
+        <button id="playPauseBtn">▶️</button>
+        <button id="nextBtn">⏭️</button>
+      </div>
+      <audio id="customAudio" src="playlist/anita.mp3"></audio>
+    </section>
+
+    <div id="candleModal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <canvas id="modalCanvas" width="300" height="300"></canvas>
+        <p id="blow-msg">Blow out the candles to begin 🎂</p>
+      </div>
+    </div>
   </div>
 
-   <canvas id="cakeCanvas" width="300" height="300"></canvas>
+  <footer>
+    <p>Created with ❤️ by Bibiresanmi David</p>
+  </footer>
+
   <canvas id="confetti"></canvas>
   <script src="script.js"></script>
 </body>
