@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Mariam 🎉</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <audio id="bg-music" autoplay loop>
+    <source src="birthday_song.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <header>
+      <h1>🎂 Happy Birthday Mariam! 🎉</h1>
+      <p>Wishing you a day filled with love, joy, and laughter!</p>
+    </header>
+
+      <section class="countdown">
+      <h2>Countdown to the Big Day</h2>
+      <div id="timer">
+        <span id="days">00</span>D :
+        <span id="hours">00</span>H :
+        <span id="minutes">00</span>M :
+        <span id="seconds">00</span>S
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h2>Memories 📸</h2>
+      <div class="photos">
+        <img src="photo1.jpg" alt="Mariam 1"/>
+        <img src="photo2.jpg" alt="Mariam 2"/>
+      </div>
+    </section>
+
+    <section class="cake-section">
+      <h2>Blow out the candles! 🕯️</h2>
+      <canvas id="cakeCanvas" width="300" height="300"></canvas>
+      <p id="blow-msg">Blow into your mic to extinguish the candles!</p>
+    </section>
+
+    <section class="message-section" style="display:none;">
+      <h2>Write a Special Message 💌</h2>
+      <textarea id="specialMessage" placeholder="Write your message to Mariam..."></textarea>
+      <button onclick="submitMessage()">Send Message</button>
+      <div id="messageDisplay"></div>
+    </section>
+  </div>
+
+   <canvas id="cakeCanvas" width="300" height="300"></canvas>
+  <canvas id="confetti"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
